@@ -50,7 +50,7 @@ var WeatherWidget = React.createClass({
     }
     // var weather = this.state.weather.weather;
     return (
-        <p>Temp: {temp}</p>
+        <p>Temp: {Math.round((temp - 273.15)* 1.8000 + 32) + " Fahrenheit"}</p>
     );
   }
 
